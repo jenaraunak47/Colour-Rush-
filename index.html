@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Color Rush</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="game">
+    <h1>Color Rush 🎨</h1>
+    <p>Match the COLOR of the word!</p>
+
+    <section class="stats">
+      <p>Time: <span id="time">30</span>s</p>
+      <p>Score: <span id="score">0</span></p>
+      <p>Best: <span id="best">0</span></p>
+    </section>
+
+    <div id="word" class="word">READY?</div>
+
+    <div id="buttons" class="buttons">
+      <button data-color="red">Red</button>
+      <button data-color="blue">Blue</button>
+      <button data-color="green">Green</button>
+      <button data-color="purple">Purple</button>
+    </div>
+
+    <p id="message" aria-live="polite">
+      Press Start to play!
+    </p>
+
+    <button id="start">Start Game</button>
+  </main>
+</body>
+</html>
