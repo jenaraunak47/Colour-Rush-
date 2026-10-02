@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #101426;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  background: #1b2238;
+  border: 1px solid #343d59;
+  border-radius: 24px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 25px 0;
+  color: #cbd5e1;
+}
+
+.word {
+  margin: 30px 0;
+  font-size: clamp(42px, 12vw, 64px);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+#start {
+  width: 100%;
+  margin-top: 15px;
+  background: #a78bfa;
+  color: #101426;
+}
+
+#message {
+  min-height: 24px;
+  color: #cbd5e1;
+}
+
+@media (max-width: 400px) {
+  .game {
+    padding: 20px;
+  }
+
+  .stats {
+    font-size: 13px;
+  }
+}
